@@ -2,7 +2,7 @@
  * Promise
  * The function passed to new promise is executor
  * state -> "pending" -> "fulfilled" (resolve) -> "rejected" (reject)
- * result -> undefined -> value (resolve(value)) or error (reject(errorß))
+ * result -> undefined -> value (resolve(value)) or error (reject(errorß)).
  */
 
 let promise = new Promise(function (resolve, reject) {
