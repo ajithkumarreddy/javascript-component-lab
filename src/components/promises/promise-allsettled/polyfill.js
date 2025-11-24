@@ -17,6 +17,6 @@ if (!Promise.allSettled) {
 }
 
 // example
-Promise.allSettled([10, 20, new TypeError("sample")])
+Promise.allSettled([10, 20, 30])
   .then((results) => console.log(results))
   .catch(console.log);
