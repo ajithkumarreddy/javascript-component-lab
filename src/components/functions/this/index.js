@@ -28,4 +28,4 @@ obj.show();
 // Event listeners
 button.addEventListener("click", function () {
     console.log(this); // button element
-});
+}); 

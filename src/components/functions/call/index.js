@@ -1,5 +1,6 @@
 /**
- * Calls a function immediately, setting this manually
+ * Calls a function immediately, setting 'this' manually
+ * func.call(object, ...args);
  */
 
 function greet(age) {
