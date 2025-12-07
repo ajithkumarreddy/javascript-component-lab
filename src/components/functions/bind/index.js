@@ -1,5 +1,5 @@
 /**
- * Returns a new function with this permanently set
+ * Returns a new function with 'this' permanently set
  */
 
 function greet(age) {
