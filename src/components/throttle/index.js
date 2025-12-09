@@ -4,12 +4,12 @@
  * Throttle ensures a function runs at most ONCE in the given delay.
  * Even if the function is triggered multiple times, it will only
  * execute again after 'delay' milliseconds have passed.
- *
- * How this implementation works:
- * - Allow immediate execution when not throttled.
- * - Set a flag (true) after running.
- * - Block further calls until delay passes.
- * - Reset the flag after delay to allow next execution.
+ * 
+ * Executes immediately on first call.
+ * Starts a cooldown timer (delay).
+ * Any calls during the cooldown are ignored.
+ * After delay ends, the next call can trigger again.
+ * Runs at a fixed rate.
  */
 
 function throttle(fn, delay) {

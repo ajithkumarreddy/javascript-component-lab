@@ -3,11 +3,10 @@
  * Debounce ensures a function runs ONLY after the user stops triggering it
  * for a specified delay. If the event keeps firing, the timer resets.
  *
- * How this implementation works:
- * - Maintain a timeoutId.
- * - Every call clears the previous timer.
- * - Set a new timer; when delay completes, call the original function.
- * - Only the last call within the delay period executes.
+ * Every call resets the timer.
+ * Only after the user stops triggering for the delay time, the function runs.
+ * Only the last call within the delay executes.
+ * Runs only after inactivity.
  */
 
 function debounce(fn, delay) {
