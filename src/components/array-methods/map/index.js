@@ -12,4 +12,4 @@ const result = array.map((item, index) => {
   return item + 1;
 });
 
-console.log(result);
+console.log(result); // [2, 3, 4]
