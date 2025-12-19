@@ -36,7 +36,7 @@ const result1 = array.myFilter(
   function (item) {
     return item > this.min;
   },
-  { min: 2 }
+  { min: 3 }
 );
 
 console.log(result1); // [3, 4]
