@@ -1,7 +1,11 @@
+/**
+ * filter polyfill
+ */
+
 if (!Array.prototype.myFilter) {
   Array.prototype.myFilter = function (callback, thisArg) {
     if (this == null) {
-      throw new TypeError();
+      throw new TypeError("Array.prototype.myFilter called on null or undefined");
     }
 
     if (typeof callback !== "function") {
@@ -36,7 +40,7 @@ const result1 = array.myFilter(
   function (item) {
     return item > this.min;
   },
-  { min: 3 }
+  { min: 3   }
 );
 
 console.log(result1); // [3, 4]
